@@ -1,0 +1,62 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181619"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="285dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="159dp"
+        android:contentDescription="imagem de fundo"
+        android:scaleType="fitXY"
+        android:src="@drawable/bc_login" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:gravity="center"
+        android:text="Bem-vindo ao Aura! 👋"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="328dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:background="@drawable/button_gradient"
+
+        android:strokeColor="#A9A9A9"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="328dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_gradient"
+        
+        android:strokeColor="#A9A9A9"
+        android:text="registro"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

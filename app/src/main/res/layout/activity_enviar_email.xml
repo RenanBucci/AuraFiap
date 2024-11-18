@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EnviarEmailActivity">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etDestinatario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Destinatário"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etAssunto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Assunto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDestinatario"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etMensagem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:hint="Mensagem"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAssunto"
+            app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
